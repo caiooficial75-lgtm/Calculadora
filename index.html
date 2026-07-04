@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Calculadora</title>
-  <script src="script.js" defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="flex items-center justify-center h-screen bg-gray-900">
-  <div class="bg-gray-800 p-6 rounded-lg shadow-lg  w-80">
-    <!-- Visor -->
-    <div id="display" class="bg-black text-white text-right p-4 mb-4 rounded text-2xl">0</div>
+<body class="flex items-center justify-center min-h-screen bg-gray-900 p-4">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <!-- Visor -->
+        <div id="display" class="bg-black text-white text-right p-4 mb-4 rounded text-2xl sm:text-3xl md:text-4xl">0</div>
 
-    <!-- teclado -->
-    <Buttons class="grid grid-cols-4 gap-2">
-      <button class="btn">7</button>
-      <button class="btn">8</button>
-      <button class="btn">9</button>
-      <button class="btn">/</button>
+        <!-- teclado -->
+        <div class="grid grid-cols-4 gap-2">
+            <button class="btn text-lg sm:text-xl">7</button>
+            <button class="btn text-lg sm:text-xl">8</button>
+            <button class="btn text-lg sm:text-xl">9</button>
+            <button class="btn text-lg sm:text-xl">*</button>
 
-      <button class="btn">4</button>
-      <button class="btn">5</button>
-      <button class="btn">6</button>
-      <button class="btn">*</button>
+            <button class="btn text-lg sm:text-xl">4</button>
+            <button class="btn text-lg sm:text-xl">5</button>
+            <button class="btn text-lg sm:text-xl">6</button>
+            <button class="btn text-lg sm:text-xl">/</button>
 
-      <button class="btn">1</button>
-      <button class="btn">2</button>
-      <button class="btn">3</button>
-      <button class="btn">-</button>
+            <button class="btn text-lg sm:text-xl">1</button>
+            <button class="btn text-lg sm:text-xl">2</button>
+            <button class="btn text-lg sm:text-xl">3</button>
+            <button class="btn text-lg sm:text-xl">-</button>
 
-      <button class="btn">0</button>
-      <button class="btn">.</button>
-      <button class="btn">=</button>
-      <button class="btn">+</button>
+            <button class="btn text-lg sm:text-xl">0</button>
+            <button class="btn text-lg sm:text-xl">.</button>
+            <button class="btn text-lg sm:text-xl">=</button>
+            <button class="btn text-lg sm:text-xl">+</button>
 
-      <button class="btn col-span-4 bg-red-500 text-white">C</button>
-    </Buttons>
-
+            <button class="btn col-span-4 bg-red-500 text-white text-lg sm:text-xl">C</button>
+        </div>
+    </div>
     <script src="script.js"></script>
-  </div>
 </body>
 </html>
